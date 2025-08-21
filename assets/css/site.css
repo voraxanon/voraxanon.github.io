@@ -71,3 +71,5 @@ footer{padding:2rem 1rem;border-top:1px solid rgba(255,255,255,.06);opacity:.9;t
 /* hero photo: make overlay minimal and center focus */
 .hero::after{ background: none !important; }
 .hero img.bg{ object-position:center center; filter:brightness(1) saturate(1.08); }
+.hero::after { background: rgba(0,0,0,0.2) !important; }
+.hero img.bg { object-position: center center; filter: brightness(1.05) contrast(1.1); }
