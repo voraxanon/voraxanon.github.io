@@ -1,0 +1,38 @@
+<!doctype html><html lang='pt'><head>
+<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Ideias • Satoshi 2.0</title>
+<link rel='stylesheet' href='/assets/css/site.css'>
+<style>.wrap{max-width:900px;margin:0 auto;padding:2rem 1rem}</style>
+</head><body>
+<nav class="nav"><div class="wrap">
+  <div class="brand"><span class="brand-badge"></span> Satoshi 2.0</div>
+  <div><a class="link" href="/">🏠 Home</a> <a class="link" href="https://github.com/voraxanon/voraxanon.github.io" target="_blank" rel="noopener">GitHub</a></div>
+</div></nav>
+
+<div class="wrap">
+  <h1>💡 Partilha a tua ideia</h1>
+  <p>Preenche os campos e vamos criar um *issue* no GitHub com a tua proposta.</p>
+  <form id="ideaForm" onsubmit="goIssue(event)">
+    <label>Título da ideia<br><input id="title" required style="width:100%;padding:.6rem;border-radius:.5rem;border:1px solid #2b3354;background:#0f1220;color:#e8e8ee"></label><br><br>
+    <label>Resumo (objetivo, impacto, riscos)<br>
+      <textarea id="body" rows="8" required style="width:100%;padding:.6rem;border-radius:.5rem;border:1px solid #2b3354;background:#0f1220;color:#e8e8ee"></textarea>
+    </label><br><br>
+    <button class="btn" type="submit">Criar proposta no GitHub</button>
+    <a class="link" style="margin-left:.8rem" href="https://github.com/voraxanon/voraxanon.github.io/issues" target="_blank" rel="noopener">Ver todas</a>
+  </form>
+</div>
+
+<footer>Obrigado por contribuir — juntos inovamos mais rápido 🚀</footer>
+
+<script>
+function goIssue(e){
+  e.preventDefault();
+  const t = document.getElementById('title').value.trim();
+  const b = document.getElementById('body').value.trim();
+  const title = encodeURIComponent('Idea: ' + t);
+  const body  = encodeURIComponent(b + '\\n\\n— via Satoshi 2.0 site');
+  const url = 'https://github.com/voraxanon/voraxanon.github.io/issues/new?labels=idea,community&title='+title+'&body='+body;
+  window.open(url,'_blank');
+}
+</script>
+</body></html>
