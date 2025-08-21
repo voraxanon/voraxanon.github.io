@@ -68,3 +68,6 @@ footer{padding:2rem 1rem;border-top:1px solid rgba(255,255,255,.06);opacity:.9;t
      linear-gradient(120deg,rgba(124,58,237,.12),rgba(34,211,238,.10)),
      linear-gradient(rgba(0,0,0,.12),rgba(0,0,0,.18));
  }
+/* hero photo: make overlay minimal and center focus */
+.hero::after{ background: none !important; }
+.hero img.bg{ object-position:center center; filter:brightness(1) saturate(1.08); }
