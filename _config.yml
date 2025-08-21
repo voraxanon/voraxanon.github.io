@@ -1,0 +1,5 @@
+﻿title: Satoshi 2.0
+description: Open-source tools for self-custody, social recovery and accessible OpSec.
+theme: minima
+minima:
+  skin: dark
