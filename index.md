@@ -4,10 +4,10 @@ title: Satoshi 2.0
 ---
 
 <div class="hero">
-  <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1580428180121-99a9b40add63?q=80&w=1600&auto=format&fit=crop');"></div>
+  <div class="bg"></div>
   <div class="inner">
-    <h1 style="font-size:clamp(2rem,6vw,3.2rem);margin:.4rem 0 1rem">Satoshi 2.0</h1>
-    <p style="max-width:900px;margin:0 auto 1.1rem;opacity:.9">
+    <h1>Satoshi 2.0</h1>
+    <p>
       Open-source tools for <em>self-custody</em>, <em>social recovery</em> and <em>accessible OpSec</em>.
     </p>
     <p>

@@ -1,49 +1,9 @@
-﻿:root {
-  --brand: #7c3aed; /* violeta bonito */
-}
-
-body {
-  font-family: system-ui, sans-serif;
-  background: #0f0f0f;
-  color: #f5f5f5;
-  margin: 0;
-}
-
-.hero {
-  position: relative;
-  overflow: hidden;
-  border-radius: 1.25rem;
-  margin: 2rem 0;
-  min-height: 44vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-}
-
-.hero .bg {
-  position: absolute;
-  inset: 0;
-  background-position: center;
-  background-size: cover;
-  filter: brightness(.5);
-}
-
-.hero .inner {
-  position: relative;
-  padding: 3rem 1rem;
-  z-index: 1;
-}
-
-.btn {
-  display: inline-block;
-  padding: .75rem 1.15rem;
-  border-radius: .8rem;
-  text-decoration: none;
-  background: var(--brand);
-  color: #fff;
-  font-weight: 600;
-  transition: .2s;
-}
-.btn:hover { opacity:.8; }
+﻿:root{--brand:#7c3aed}
+body{margin:0;font-family:sans-serif}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden}
+.hero .bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1580428180121-99a9b40add63?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;filter:brightness(.45)}
+.hero .inner{position:relative;z-index:1;padding:2rem}
+.hero h1{font-size:clamp(2rem,6vw,3.5rem);margin-bottom:1rem}
+.hero p{max-width:900px;margin:0 auto 1.5rem;line-height:1.6}
+.btn{display:inline-block;margin:.4rem;padding:.75rem 1.2rem;border-radius:.6rem;text-decoration:none;background:var(--brand);color:#fff;font-weight:600;transition:.2s}
+.btn:hover{opacity:.85}
