@@ -48,3 +48,10 @@ footer{padding:2rem 1rem;border-top:1px solid rgba(255,255,255,.06);opacity:.9;t
     linear-gradient(120deg,rgba(124,58,237,.12),rgba(34,211,238,.10)),
     linear-gradient(rgba(0,0,0,.12),rgba(0,0,0,.18));
 }
+/* override: hero overlay lighter + center image */
+.hero img.bg{object-position:center center}
+.hero::after{
+  background:
+    linear-gradient(120deg,rgba(124,58,237,.12),rgba(34,211,238,.10)),
+    linear-gradient(rgba(0,0,0,.12),rgba(0,0,0,.18));
+}
