@@ -12,6 +12,6 @@
       return \<li><a href="\" target="_blank" rel="noopener">\</a> <small style="opacity:.7">(\ · \)</small></li>\;
     }).join('');
   }catch(e){
-    ul.innerHTML = '<li><em>Não foi possível carregar o changelog agora.</em></li>';
+    ul.innerHTML = '<li><em>Could not load changelog right now.</em></li>';
   }
 })();
