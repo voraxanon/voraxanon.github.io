@@ -2,6 +2,16 @@
 <meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
 <title>Satoshi 2.0</title>
 <link rel='stylesheet' href='/assets/css/site.css'>
+<style id="force-hero-bg">
+  /* FORÇAR fundo do herói com a imagem local (override total) */
+  .hero{
+    background: url('/assets/img/mars-hero.jpg') center center / cover no-repeat fixed !important;
+  }
+  /* Se existir algum elemento .bg antigo, escondemos */
+  .hero .bg{ display:none !important; }
+  /* Remover overlay escuro que possa tapar a foto */
+  .hero::after{ background: none !important; }
+</style>
 </head><body>
 
 <nav class="nav">
