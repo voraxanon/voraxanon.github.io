@@ -41,4 +41,10 @@ a{color:inherit}
 #changelog li{border-left:3px solid #2b3354;padding:.55rem .8rem;margin:.5rem 0;background:#0f1323;border-radius:.4rem}
 
 /* FOOTER */
-footer{padding:2rem 1rem;border-top:1px solid rgba(255,255,255,.06);opacity:.9;text-align:center;color:var(--muted)}
+footer{padding:2rem 1rem;border-top:1px solid rgba(255,255,255,.06);opacity:.9;text-align:center;color:var(--muted)}/* override: hero overlay lighter + center image */
+.hero img.bg{object-position:center center}
+.hero::after{
+  background:
+    linear-gradient(120deg,rgba(124,58,237,.12),rgba(34,211,238,.10)),
+    linear-gradient(rgba(0,0,0,.12),rgba(0,0,0,.18));
+}
