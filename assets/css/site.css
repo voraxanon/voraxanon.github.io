@@ -87,3 +87,9 @@ footer{padding:2rem 1rem;border-top:1px solid rgba(255,255,255,.06);opacity:.9;t
     linear-gradient(120deg,rgba(124,58,237,.10),rgba(34,211,238,.08)),
     linear-gradient(rgba(0,0,0,.12),rgba(0,0,0,.18));
 }
+/* === FORCE LOCAL MARS GROUND HERO === */
+.hero::after{ background: none !important; }
+.hero img.bg{
+  object-position: center center;
+  filter: brightness(1.08) contrast(1.12) saturate(1.05);
+}
